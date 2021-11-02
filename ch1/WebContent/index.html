@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<a href= "/user/register.html">회원가입</a>
+<!-- method 생략가능, 기본값은 get -->
+<!--form action="get.jsp" method="get"-->
+
+<!--post로 보내는 경우 입력한 데이터가 주소에 보이지 않음 
+    회원가입, 로그인을 하는 경우엔 post를 사용함
+    사용자에게 받는 정보의 중요도에 따라 get 또는 post를 사용, post는 한글이 깨짐-->
+<form action="get.jsp" method="post">
+<div>
+	<label for="">이름</label>
+	<input type="text" name="username"/>
+</div>
+<div>
+	<label for="">나이</label>
+	<input type="text" name="age"/>
+</div>
+<div>
+        <label for="gender">성별</label>
+        <!--swing에서 radio button이랑 같은 기능, 둘 중 하나 선택
+            name을 동일하게 가지고 있어야 하나의 그룹이 되어 선택할 수 있음-->
+        <!-- 선택항목에서 기본값을 설정해서 보여주고 싶으면 checked="checked"를 사용-->    
+        <input type="radio" name="gender" id="" value="남성" checked="checked"/>남성
+        <input type="radio" name="gender" id="" value="여성" />여성
+      </div>
+      <div>
+        <!--swing에서 checkbox랑 같은 기능-->
+        <!--사용자에게 직접 입력을 받지 않고 선택을 받는 경우 value를 넣어줘야 함-->
+        <!-- 선택항목에서 기본값을 설정해서 보여주고 싶으면 checked="checked"를 사용-->    
+        <input type="checkbox" name="fruits" id="" value="사과" checked="checked"/>사과
+        <input type="checkbox" name="fruits" id="" value="바나나"/>바나나
+        <input type="checkbox" name="fruits" id="" value="딸기"/>딸기
+        <input type="checkbox" name="fruits" id="" value="포도"/>포도
+        <input type="checkbox" name="fruits" id="" value="수박"/>수박
+        <input type="checkbox" name="fruits" id="" value="키위"/>키위
+      </div>
+      <div>
+       <input type="text" name="page1" value="15" hidden />
+       <input type="hidden" name="bro" />
+        <input type= "submit" value = "전송"/>
+        </div>
+</form>
+</body>
+</html>
