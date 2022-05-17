@@ -7,6 +7,8 @@ email varchar2(50) not null
 );
 
 insert into member values('hong123','hong123@','홍길동','남','hong123@gmail.com');
+insert into member values('test','12345','홍길동','남','hong123@gmail.com');
+insert into member values('hong123','hong123@','홍길동','남','hong123@gmail.com');
 
 select * from member;
 
